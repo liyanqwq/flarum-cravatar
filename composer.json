@@ -1,0 +1,42 @@
+{
+  "name": "liyanqwq/flarum-cravatar",
+  "description": "Add cravatar avatars to your forum",
+  "keywords": [
+    "flarum", "cravatar"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/liyanqwq/flarum-cravatar"
+  },
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "flarum/core": "^1.0.3",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "authors": [
+    {
+      "name": "liyanqwq",
+      "homepage": "https://liyan.moe",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "IanM\\Gravatar\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Cravatar",
+      "category": "feature",
+      "icon": {
+        "image": "resources/logo.svg",
+        "backgroundColor": "#0072e3",
+        "backgroundSize": "100%",
+        "backgroundRepeat": "no-repeat",
+        "backgroundPosition": "center"
+    }
+    }
+  }
+}
